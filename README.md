@@ -39,7 +39,7 @@ cd /vagrant
 
 Py env in vagrant
 python -m venv ~/env
-~/env/bin/activate
+source ~/env/bin/activate
 deactivate : to deactive virtual env
 
 django commands
@@ -66,4 +66,7 @@ this 8000 is also specified on vargant config
 127.0.0.1:8000
 
 
+
+Warning : LF will be replaced by CRLF
+The term CRLF refers to Carriage Return (ASCII 13, \r ) Line Feed (ASCII 10, \n ). ... For example: in Windows both a CR and LF are required to note the end of a line, whereas in Linux/UNIX a LF is only required.
 
