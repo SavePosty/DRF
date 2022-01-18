@@ -16,10 +16,54 @@ push :3 steps provided by github
 
 Replace code: https://gist.github.com/LondonAppDev/199eef145a21587ea866b69d40d28682 
 Vagrant up
+
+After downloading:
+
 vagrant ssh
+
 type exit to exit
 cd /vagrant : syncing 
 
 3. To run a py file
 python filename.py
+
+4. Added updaeded files again
+git add .
+git commit -m "text"
+git push origin
+
+to open vegrant again
+vagrant up
+vagrant ssh
+cd /vagrant
+
+Py env in vagrant
+python -m venv ~/env
+~/env/bin/activate
+deactivate : to deactive virtual env
+
+django commands
+django-admin.py startproject profiles_project .
+
+. means root here
+
+python manage.py startapp profiels_api
+
+changes to be made in settings.py
+
+INSTALLED_APPS = [
+    'profiles_api',
+    'rest_framework',
+    'rest_framework.authtoken',
+]
+
+to run pythondjango server
+
+python manage.py runserver 0.0.0.0:8000
+
+this 8000 is also specified on vargant config
+
+127.0.0.1:8000
+
+
 
